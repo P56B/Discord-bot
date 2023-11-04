@@ -1,3 +1,4 @@
+
 # Discord Bot Projekt
 
 Dieser Discord Bot bietet ein XP-System, ein Ticket-System mit Buttons, Willkommensnachrichten und automatische Nickname-Anpassungen.

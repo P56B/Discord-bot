@@ -1,3 +1,4 @@
+
 const { MessageActionRow, MessageButton, MessageEmbed } = require('discord.js');
 
 class TicketSystem {
@@ -24,8 +25,22 @@ class TicketSystem {
     }
 
     createTicketInteraction(interaction) {
-        // Hier wird die Interaktion für das Erstellen eines Tickets gehandhabt.
-        // Diese Methode muss noch implementiert werden.
+        try {
+            // Hier wird die Interaktion für das Erstellen eines Tickets gehandhabt.
+            // Implementieren Sie die Logik, um auf das Drücken eines Ticketbuttons zu reagieren
+            const ticketType = this.ticketTypes[interaction.customId];
+            if (ticketType) {
+                // Logik zum Erstellen eines Tickets entsprechend des gewählten Typs
+                // Diese Funktion sollte die Ticket-Erstellung und -Konfiguration handhaben
+                // Zum Beispiel das Erstellen eines neuen Kanals für das Ticket
+            } else {
+                throw new Error('Unbekannter Tickettyp');
+            }
+        } catch (error) {
+            console.error('Fehler bei der Erstellung eines Tickets:', error);
+            // Senden einer Fehlermeldung an den Benutzer
+            interaction.reply({ content: 'Es gab einen Fehler bei der Erstellung deines Tickets. Bitte versuche es später erneut.', ephemeral: true });
+        }
     }
 
     createTicketButtons() {

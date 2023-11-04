@@ -1,3 +1,4 @@
+
 /**
  * Überprüft die notwendigen Umgebungsvariablen.
  */
