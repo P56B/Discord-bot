@@ -1,4 +1,3 @@
-
 const cooldowns = new Map();
 
 function isOnCooldown(commandName, userId) {

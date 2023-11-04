@@ -1,4 +1,3 @@
-
 require('dotenv').config();
 const { Client, Intents } = require('discord.js');
 const XPSystem = require('./xpSystem');

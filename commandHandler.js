@@ -1,4 +1,3 @@
-
 const { isOnCooldown, setCooldown } = require('./cooldownManager');
 
 function processCommand(message) {

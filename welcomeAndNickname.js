@@ -1,4 +1,3 @@
-
 /**
  * Sendet eine Willkommensnachricht an ein neues Mitglied.
  * @param {GuildMember} member - Das Mitglied, das dem Server beigetreten ist.
